@@ -1,0 +1,163 @@
+* {
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(135deg, #014871, #a0ebcf);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 35%;
+    top: 200px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.header {
+    margin-bottom: 26px;
+}
+
+.title {
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.header-icon {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-note {
+    background-color: #ccc;
+    border-radius: 40px;
+    padding-left: 20px;
+}
+
+.row input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1.6rem;
+    flex: 1;
+}
+
+.row .btn-add {
+    border: none;
+    background-color: #FF643C;
+    color: #fff;
+    padding: 16px 40px;
+    border-radius: 40px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.row .btn-add:hover {
+    opacity: 0.9;
+}
+
+ul {
+    padding-left: 28px;
+}
+
+.note-item {
+    font-size: 1.6rem;
+    list-style-type: none;
+    padding: 8px 0; 
+}
+
+.note-item span {
+    flex: 1;
+}
+
+.note-item span:hover {
+    cursor: pointer;
+}
+
+.note-item.checked {
+    text-decoration: line-through;
+}
+
+.note-item::before {
+    content: "";
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 40px;
+    cursor: pointer;
+}
+
+.note-item.checked::before {
+    background-image: url(images/checked.png);
+}
+
+.btn-del {
+    border: none;
+    color: #555;
+    font-size: 2.0rem;
+    padding: 4px 8px; 
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.btn-del:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/* Tablet and Mobile */
+@media (max-width: 1023px) {
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .row input {
+        font-size: 1.4rem;
+    }
+    
+    .row .btn-add {
+        font-size: 1.4rem;
+        padding: 12px 14px;
+    }
+
+    .note-item::before {
+        left: 30px;
+    }
+}
+
+
+
+
