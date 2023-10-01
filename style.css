@@ -156,6 +156,10 @@ ul {
     .note-item::before {
         left: 30px;
     }
+
+    .btn-add {
+        padding: 16px 24px!important;
+    }
 }
 
 
